@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Visualizations</title>
+  <title>Weather Web Design Challenge</title>
 
   <!-- Bring in our bootstrap stylesheet and our style sheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,7 +13,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Create Nav Bar to use throughout-->
+  <nav class="navbar navbar-expand-lg navbar-blue bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,21 +22,82 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="visualizations.html">Comparison</a>
+        </li>
+        <li class="nav-item">    
+          <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" href="visualizations.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Visualize
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="temp.htlm">Latitude vs Max Temperature</a>
+            <a class="dropdown-item" href="humid.html">Latitude vs Humidity</a>
+            <a class="dropdown-item" href="cloud.html">Latitude vs Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Latitude vs Wind Speed</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>  
+            <a class="dropdown-item" href="visualizations.html">Vizualize All</a>
+            </div> 
+          </li> 
+       </ul> 
+      </div>
+    </nav>
+  <!-- Create Jumbotron container to describe project-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="box">
+              <h2 class="title">City Latitude Visualizations</h2>
+              <p class="p1">Please click on plots below for further details</p>
+              <hr>
+              <br>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="box">
+              <h3 class="title">Max Temperature</h3>
+              <a href="temp.html">
+                  <img class="panel" src="WebVisualizations\visualizations\Fig1.png" alt="Max Temperature Image" style="width:100%">
+              </a>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="box">
+              <h3 class="title">Humidity</h3>
+              <a href="humid.html">
+                  <img class="panel" src="WebVisualizations\visualizations\Fig2.png" alt="Humidity Graph" style="width:100%">
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="box">
+              <h3 class="title">Cloudiness</h3>
+              <a href="cloud.html">
+                  <img class="panel" src="WebVisualizations\visualizations\Fig3.png" alt="Cloudiness Graph" style="width:100%">
+              </a>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="box">
+              <h3 class="title">Wind Speed</h3>
+              <a href="wind.html">
+                  <img class="panel" src="WebVisualizations\visualizations\Fig4.png" alt="Wind Speed Graph" style="width:100%">
+              </a>
+          </div>
+      </div>
+  </div>
+    
+  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

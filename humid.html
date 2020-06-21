@@ -13,7 +13,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Create Nav Bar to use throughout-->
+  <nav class="navbar navbar-expand-lg navbar-blue bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,7 +25,7 @@
           <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="comparison.html">Comparison</a>
+          <a class="nav-link" href="visualizations.html">Comparison</a>
         </li>
         <li class="nav-item">    
           <a class="nav-link" href="data.html">Data</a>
@@ -34,11 +35,35 @@
             Visualize
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="temp.html">Latitude vs Max Temperature</a>
+            <a class="dropdown-item" href="humid.html">Latitude vs Humidity</a>
+            <a class="dropdown-item" href="cloud.html">Latitude vs Cloudiness</a>
+            <a class="dropdown-item" href="cloud.html">Latitude vs Wind Speed</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>  
+            <a class="dropdown-item" href="visualizations.html">Vizualize All</a>
+          </div> 
+        </li> 
+      </ul> 
+    </div>
+  </nav>
+  <!-- Create container for graph image and analysis-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-16">
+        <div class="box">
+          <h2 class="title">Humidity</h2>
+          <hr>
+          <br>
+            <img src="WebVisualizations\visualizations\Fig2.png" alt="Humidity Graph" style="width:100%">
+            <p>  This is a plot comparing city latitude to it's recorded humidity on a given day.  There does not appear to be much correlation between humidity and latitude.  Humidity is likely influenced by other geographical features such as proximity to water bodies, mountain ranges, vegetation, elevation and winds to name a few.
+            </p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
